@@ -1,0 +1,22 @@
+# Core Qualcomm AI Hub SDK
+qai-hub
+qai-hub[torch]
+
+# ONNX support
+onnx>=1.14.0
+onnxruntime>=1.16.0
+
+# Numerics
+numpy>=1.24.0
+
+# CLI & output
+rich>=13.0.0
+tabulate>=0.9.0
+
+
+# Testing
+pytest>=7.4.0
+
+# Optional: PyTorch for model export (needed for hub_client torch export path)
+# torch>=2.0.0
+# torchvision>=0.15.0

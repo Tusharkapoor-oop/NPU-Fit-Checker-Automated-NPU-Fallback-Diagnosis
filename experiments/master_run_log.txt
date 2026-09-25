@@ -1,0 +1,179 @@
+
+================================================================================
+--- NEW RUN STARTED AT 2026-09-24T10:22:15.808047 ---
+--- COMMAND: C:\Users\ACER\Downloads\SNAPDRAGON\npu-fit-checker\fitchecker\__main__.py run --model mobilenet_v2.onnx --device Snapdragon X2 Elite CRD ---
+================================================================================
+[fitchecker] Submitting 'mobilenet_v2.onnx' -> 'Snapdragon X2 Elite CRD' ...
+Uploading mobilenet_v2.onnx:   0%|[34m          [0m| 0.00/13.3M [00:00<?, ?B/s]Uploading mobilenet_v2.onnx:   7%|[34m7         [0m| 1.00M/13.3M [00:00<00:06, 2.09MB/s]Uploading mobilenet_v2.onnx:  15%|[34m#4        [0m| 2.00M/13.3M [00:01<00:05, 2.10MB/s]Uploading mobilenet_v2.onnx:  22%|[34m##2       [0m| 3.00M/13.3M [00:01<00:07, 1.44MB/s]Uploading mobilenet_v2.onnx:  37%|[34m###7      [0m| 5.00M/13.3M [00:02<00:03, 2.53MB/s]Uploading mobilenet_v2.onnx:  45%|[34m####4     [0m| 6.00M/13.3M [00:02<00:02, 3.19MB/s]Uploading mobilenet_v2.onnx:  60%|[34m#####9    [0m| 8.00M/13.3M [00:02<00:01, 5.01MB/s]Uploading mobilenet_v2.onnx:  75%|[34m#######4  [0m| 10.0M/13.3M [00:02<00:00, 6.88MB/s]Uploading mobilenet_v2.onnx:  90%|[34m########9 [0m| 12.0M/13.3M [00:02<00:00, 8.72MB/s]Uploading mobilenet_v2.onnx: 100%|[34m##########[0m| 13.3M/13.3M [00:03<00:00, 4.03MB/s]
+Scheduled compile job (jgk24z4vg) successfully. To see the status and results:
+    https://workbench.aihub.qualcomm.com/jobs/jgk24z4vg/
+
+[hub_client] Compile job: https://workbench.aihub.qualcomm.com/jobs/jgk24z4vg/
+[hub_client] Waiting for compile job ...
+  [poll] status.code type=str, repr='CREATED'
+  Job status: code=CREATED (0s)
+  Job status: code=OPTIMIZING_MODEL (16s)
+  Job status: code=OPTIMIZING_MODEL (32s)
+  Job status: code=SUCCESS (48s)
+Scheduled profile job (jglyxnx25) successfully. To see the status and results:
+    https://workbench.aihub.qualcomm.com/jobs/jglyxnx25/
+
+[hub_client] Profile job: https://workbench.aihub.qualcomm.com/jobs/jglyxnx25/
+[hub_client] Waiting for profile job ...
+  [poll] status.code type=str, repr='CREATED'
+  Job status: code=CREATED (0s)
+  Job status: code=CREATED (16s)
+  Job status: code=PROVISIONING_DEVICE (32s)
+  Job status: code=PROVISIONING_DEVICE (48s)
+  Job status: code=PROVISIONING_DEVICE (65s)
+  Job status: code=PROVISIONING_DEVICE (81s)
+  Job status: code=PROVISIONING_DEVICE (97s)
+  Job status: code=PROVISIONING_DEVICE (113s)
+  Job status: code=PROVISIONING_DEVICE (129s)
+  Job status: code=MEASURING_PERFORMANCE (145s)
+  Job status: code=MEASURING_PERFORMANCE (161s)
+  Job status: code=MEASURING_PERFORMANCE (177s)
+  Job status: code=MEASURING_PERFORMANCE (193s)
+  Job status: code=MEASURING_PERFORMANCE (209s)
+  Job status: code=MEASURING_PERFORMANCE (225s)
+  Job status: code=MEASURING_PERFORMANCE (242s)
+  Job status: code=MEASURING_PERFORMANCE (258s)
+  Job status: code=MEASURING_PERFORMANCE (274s)
+  Job status: code=MEASURING_PERFORMANCE (290s)
+  Job status: code=SUCCESS (306s)
+[hub_client] Raw profile saved: experiments\mobilenet_v2_20260924_102215_profile.json
+# NPU Fit Checker Report
+*Generated: 2026-09-24 10:28:25*
+
+> **Device**: Profiled on Qualcomm AI Hub cloud-hosted Snapdragon device: Snapdragon X2 Elite CRD  
+> **Model**: mobilenet_v2  
+> **Job ID**: UNVERIFIED  
+
+## Latency
+
+| Metric | Value |
+|--------|-------|
+| Total inference time | 0.273 ms (273 µs) |
+
+## Compute-Unit Breakdown
+
+| Compute Unit | Layer Count | Fraction |
+|---|---|---|
+| NPU | 104 | 100.0% |
+| CPU | 0 | 0.0% |
+| GPU | 0 | 0.0% |
+| UNASSIGNED | 0 | 0.0% |
+| **Total** | 104 | 100.0% |
+
+## Findings
+
+### Finding 1: [INFO] full_npu_execution
+
+**Affected layers** (1): `(all layers)`
+
+**What happened**: Every operator in the model was placed on the Qualcomm Hexagon NPU. Zero CPU fallback was observed.
+
+**Fix**: No action needed. Model fits the NPU completely.
+
+**Evidence**: `experiments/baseline_fp32/profile.json`
+
+---
+## Caveats and Limits
+
+- Profiled on Qualcomm AI Hub cloud-hosted Snapdragon device: Snapdragon X2 Elite CRD. Results may differ on physical hardware.
+- Layer-level compute-unit assignment depends on the QNN SDK version used during compilation. Results may differ with different SDK versions.
+- Rules are based on observed patterns from experiments in `experiments/`. See `docs/LIMITS.md` for limitations.
+
+*All latency values come from the downloaded AI Hub profile JSON.*
+
+[fitchecker] Report saved: results\report_mobilenet_v2_20260924_102825.md
+
+================================================================================
+--- NEW RUN STARTED AT 2026-09-24T18:20:21.341871 ---
+--- COMMAND: C:\Users\ACER\Downloads\SNAPDRAGON\npu-fit-checker\fitchecker\__main__.py run --model mobilenet_v2.onnx --device Snapdragon X2 Elite CRD ---
+================================================================================
+[fitchecker] Submitting 'mobilenet_v2.onnx' -> 'Snapdragon X2 Elite CRD' ...
+Uploading mobilenet_v2.onnx:   0%|[34m          [0m| 0.00/13.3M [00:00<?, ?B/s]Uploading mobilenet_v2.onnx:   7%|[34m7         [0m| 1.00M/13.3M [00:01<00:13, 953kB/s]Uploading mobilenet_v2.onnx:  15%|[34m#4        [0m| 2.00M/13.3M [00:01<00:08, 1.45MB/s]Uploading mobilenet_v2.onnx:  22%|[34m##2       [0m| 3.00M/13.3M [00:01<00:04, 2.38MB/s]Uploading mobilenet_v2.onnx:  30%|[34m##9       [0m| 4.00M/13.3M [00:01<00:03, 2.88MB/s]Uploading mobilenet_v2.onnx:  37%|[34m###7      [0m| 5.00M/13.3M [00:02<00:03, 2.63MB/s]Uploading mobilenet_v2.onnx:  45%|[34m####4     [0m| 6.00M/13.3M [00:02<00:03, 2.44MB/s]Uploading mobilenet_v2.onnx:  52%|[34m#####2    [0m| 7.00M/13.3M [00:03<00:02, 2.75MB/s]Uploading mobilenet_v2.onnx:  60%|[34m#####9    [0m| 8.00M/13.3M [00:03<00:01, 3.55MB/s]Uploading mobilenet_v2.onnx:  67%|[34m######7   [0m| 9.00M/13.3M [00:03<00:01, 4.29MB/s]Uploading mobilenet_v2.onnx:  75%|[34m#######4  [0m| 10.0M/13.3M [00:03<00:00, 5.11MB/s]Uploading mobilenet_v2.onnx:  82%|[34m########2 [0m| 11.0M/13.3M [00:03<00:00, 5.70MB/s]Uploading mobilenet_v2.onnx:  90%|[34m########9 [0m| 12.0M/13.3M [00:03<00:00, 6.23MB/s]Uploading mobilenet_v2.onnx:  97%|[34m#########7[0m| 13.0M/13.3M [00:03<00:00, 6.65MB/s]Uploading mobilenet_v2.onnx: 100%|[34m##########[0m| 13.3M/13.3M [00:04<00:00, 3.21MB/s]
+Scheduled compile job (jgzll4865) successfully. To see the status and results:
+    https://workbench.aihub.qualcomm.com/jobs/jgzll4865/
+
+[hub_client] Compile job: https://workbench.aihub.qualcomm.com/jobs/jgzll4865/
+[hub_client] Waiting for compile job ...
+  [poll] status.code type=str, repr='CREATED'
+  Job status: code=CREATED (1s)
+  Job status: code=CREATED (18s)
+  Job status: code=CREATED (34s)
+  Job status: code=OPTIMIZING_MODEL (51s)
+  Job status: code=OPTIMIZING_MODEL (68s)
+  Job status: code=SUCCESS (84s)
+Scheduled profile job (jg9zzxkvp) successfully. To see the status and results:
+    https://workbench.aihub.qualcomm.com/jobs/jg9zzxkvp/
+
+[hub_client] Profile job: https://workbench.aihub.qualcomm.com/jobs/jg9zzxkvp/
+[hub_client] Waiting for profile job ...
+  [poll] status.code type=str, repr='CREATED'
+  Job status: code=CREATED (1s)
+  Job status: code=CREATED (18s)
+  Job status: code=PROVISIONING_DEVICE (35s)
+  Job status: code=PROVISIONING_DEVICE (51s)
+  Job status: code=PROVISIONING_DEVICE (68s)
+  Job status: code=PROVISIONING_DEVICE (85s)
+  Job status: code=PROVISIONING_DEVICE (102s)
+  Job status: code=PROVISIONING_DEVICE (119s)
+  Job status: code=PROVISIONING_DEVICE (136s)
+  Job status: code=MEASURING_PERFORMANCE (153s)
+  Job status: code=MEASURING_PERFORMANCE (170s)
+  Job status: code=MEASURING_PERFORMANCE (186s)
+  Job status: code=MEASURING_PERFORMANCE (203s)
+  Job status: code=MEASURING_PERFORMANCE (220s)
+  Job status: code=MEASURING_PERFORMANCE (236s)
+  Job status: code=MEASURING_PERFORMANCE (253s)
+  Job status: code=MEASURING_PERFORMANCE (270s)
+  Job status: code=MEASURING_PERFORMANCE (287s)
+  Job status: code=SUCCESS (304s)
+[hub_client] Raw profile saved: experiments\mobilenet_v2_20260924_182021_profile.json
+# NPU Fit Checker Report
+*Generated: 2026-09-24 18:27:23*
+
+> **Device**: Profiled on Qualcomm AI Hub cloud-hosted Snapdragon device: Snapdragon X2 Elite CRD  
+> **Model**: mobilenet_v2  
+> **Job ID**: jg9zzxkvp  
+
+## Latency
+
+| Metric | Value |
+|--------|-------|
+| Total inference time | 0.298 ms (298 µs) |
+
+## Compute-Unit Breakdown
+
+| Compute Unit | Layer Count | Fraction |
+|---|---|---|
+| NPU | 104 | 100.0% |
+| CPU | 0 | 0.0% |
+| GPU | 0 | 0.0% |
+| UNASSIGNED | 0 | 0.0% |
+| **Total** | 104 | 100.0% |
+
+## Findings
+
+### Finding 1: [INFO] full_npu_execution
+
+**Affected layers** (1): `(all layers)`
+
+**What happened**: Every operator in the model was placed on the Qualcomm Hexagon NPU. Zero CPU fallback was observed.
+
+**Fix**: No action needed. Model fits the NPU completely.
+
+**Evidence**: `experiments/mobilenet_v2_20260924_182021_profile.json`
+
+---
+## Caveats and Limits
+
+- Profiled on Qualcomm AI Hub cloud-hosted Snapdragon device: Snapdragon X2 Elite CRD. Results may differ on physical hardware.
+- Layer-level compute-unit assignment depends on the QNN SDK version used during compilation. Results may differ with different SDK versions.
+- Rules are based on observed patterns from experiments in `experiments/`. See `docs/LIMITS.md` for limitations.
+
+*All latency values come from the downloaded AI Hub profile JSON.*
+
+[fitchecker] Report saved: results\report_mobilenet_v2_20260924_182723.md

@@ -1,0 +1,1142 @@
+{
+  "execution_summary": {
+    "estimated_inference_time": 159,
+    "estimated_inference_peak_memory": 32940032,
+    "first_load_time": 2734918,
+    "first_load_peak_memory": 341843968,
+    "warm_load_time": 317636,
+    "warm_load_peak_memory": 31383552,
+    "compile_time": 0,
+    "compile_peak_memory": 0,
+    "compile_memory_increase_range": [
+      0,
+      0
+    ],
+    "compile_memory_peak_range": [
+      0,
+      0
+    ],
+    "first_load_memory_increase_range": [
+      286404608,
+      286404608
+    ],
+    "first_load_memory_peak_range": [
+      336842752,
+      336842752
+    ],
+    "warm_load_memory_increase_range": [
+      26394624,
+      26394624
+    ],
+    "warm_load_memory_peak_range": [
+      26394624,
+      26394624
+    ],
+    "inference_memory_increase_range": [
+      1712128,
+      1712128
+    ],
+    "inference_memory_peak_range": [
+      1712128,
+      1712128
+    ],
+    "all_compile_times": [],
+    "all_first_load_times": [
+      2734918
+    ],
+    "all_warm_load_times": [
+      317636
+    ],
+    "all_inference_times": [
+      19833,
+      290,
+      236,
+      212,
+      281,
+      223,
+      213,
+      231,
+      220,
+      204,
+      246,
+      208,
+      207,
+      230,
+      206,
+      206,
+      254,
+      227,
+      159,
+      159,
+      164,
+      161,
+      161,
+      160,
+      159,
+      160,
+      163,
+      188,
+      165,
+      160,
+      163,
+      162,
+      161,
+      163,
+      203,
+      173,
+      195,
+      199,
+      196,
+      194,
+      196,
+      193,
+      194,
+      199,
+      195,
+      208,
+      227,
+      196,
+      193,
+      269,
+      239,
+      200,
+      196,
+      197,
+      195,
+      195,
+      191,
+      204,
+      208,
+      210,
+      196,
+      199,
+      194,
+      196,
+      277,
+      248,
+      194,
+      194,
+      188,
+      185,
+      200,
+      194,
+      210,
+      189,
+      183,
+      182,
+      185,
+      197,
+      185,
+      188,
+      181,
+      189,
+      302,
+      184,
+      203,
+      186,
+      181,
+      190,
+      185,
+      184,
+      201,
+      259,
+      204,
+      192,
+      200,
+      211,
+      184,
+      234,
+      199,
+      184
+    ]
+  },
+  "execution_detail": [
+    {
+      "name": "QcQuantizeOp_input_q",
+      "type": "QuantizeLinear",
+      "compute_unit": "CPU",
+      "execution_time": 168,
+      "execution_cycles": 0
+    },
+    {
+      "name": "Input",
+      "type": "Input",
+      "compute_unit": "NPU",
+      "execution_time": 3,
+      "execution_cycles": 5284
+    },
+    {
+      "name": "Transpose",
+      "type": "Transpose",
+      "compute_unit": "NPU",
+      "execution_time": 41,
+      "execution_cycles": 87406
+    },
+    {
+      "name": "/features/features.0/features.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 67,
+      "execution_cycles": 141204
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.1/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 4,
+      "execution_cycles": 9222
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.1/conv/conv.1/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 3,
+      "execution_cycles": 6296
+    },
+    {
+      "name": "/features/features.2/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 4,
+      "execution_cycles": 7795
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.2/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 68,
+      "execution_cycles": 142617
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.2/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 3056
+    },
+    {
+      "name": "/features/features.3/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 2,
+      "execution_cycles": 4034
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.3/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 3,
+      "execution_cycles": 6240
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.3/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 2558
+    },
+    {
+      "name": "/features/features.3/Add",
+      "type": "Add",
+      "compute_unit": "NPU",
+      "execution_time": 8,
+      "execution_cycles": 15961
+    },
+    {
+      "name": "/features/features.4/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 2,
+      "execution_cycles": 3280
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.4/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 20,
+      "execution_cycles": 42795
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.4/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 2976
+    },
+    {
+      "name": "/features/features.5/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 1557
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.5/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 2,
+      "execution_cycles": 5252
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.5/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 2307
+    },
+    {
+      "name": "/features/features.5/Add",
+      "type": "Add",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 2439
+    },
+    {
+      "name": "/features/features.6/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 2402
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.6/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 3,
+      "execution_cycles": 5341
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.6/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 2705
+    },
+    {
+      "name": "/features/features.6/Add",
+      "type": "Add",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 2401
+    },
+    {
+      "name": "/features/features.7/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 1907
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.7/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 13,
+      "execution_cycles": 27752
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.7/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 1356
+    },
+    {
+      "name": "/features/features.8/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 2296
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.8/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 2,
+      "execution_cycles": 4663
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.8/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 933
+    },
+    {
+      "name": "/features/features.8/Add",
+      "type": "Add",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 1257
+    },
+    {
+      "name": "/features/features.9/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 1875
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.9/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 2,
+      "execution_cycles": 4145
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.9/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 2823
+    },
+    {
+      "name": "/features/features.9/Add",
+      "type": "Add",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 1177
+    },
+    {
+      "name": "/features/features.10/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 2363
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.10/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 2,
+      "execution_cycles": 4042
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.10/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 918
+    },
+    {
+      "name": "/features/features.10/Add",
+      "type": "Add",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 1169
+    },
+    {
+      "name": "/features/features.11/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 1877
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.11/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 2,
+      "execution_cycles": 4059
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.11/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 1258
+    },
+    {
+      "name": "/features/features.12/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 2433
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.12/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 3,
+      "execution_cycles": 5865
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.12/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 1581
+    },
+    {
+      "name": "/features/features.12/Add",
+      "type": "Add",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 2001
+    },
+    {
+      "name": "/features/features.13/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 2856
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.13/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 3,
+      "execution_cycles": 5829
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.13/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 1624
+    },
+    {
+      "name": "/features/features.13/Add",
+      "type": "Add",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 1723
+    },
+    {
+      "name": "/features/features.14/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 2,
+      "execution_cycles": 4666
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.14/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 23,
+      "execution_cycles": 49195
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.14/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 974
+    },
+    {
+      "name": "/features/features.15/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 2768
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.15/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 3,
+      "execution_cycles": 6742
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.15/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 1214
+    },
+    {
+      "name": "/features/features.15/Add",
+      "type": "Add",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 835
+    },
+    {
+      "name": "/features/features.16/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 2,
+      "execution_cycles": 4971
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.16/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 4,
+      "execution_cycles": 9207
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.16/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 1124
+    },
+    {
+      "name": "/features/features.16/Add",
+      "type": "Add",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 673
+    },
+    {
+      "name": "/features/features.17/conv/conv.0/conv.0.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 3,
+      "execution_cycles": 7175
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.17/conv/conv.1/conv.1.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 2,
+      "execution_cycles": 4744
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/features/features.17/conv/conv.2/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 2025
+    },
+    {
+      "name": "/features/features.18/features.18.0/Conv",
+      "type": "Conv",
+      "compute_unit": "NPU",
+      "execution_time": 2,
+      "execution_cycles": 4718
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_1_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "QcQuantizeOp_/features/features.0/features.0.2/Constant_output_0_copy_10_dq/duplicated",
+      "type": "QcQuantizeOp",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "/GlobalAveragePool",
+      "type": "GlobalAveragePool",
+      "compute_unit": "NPU",
+      "execution_time": 39,
+      "execution_cycles": 83265
+    },
+    {
+      "name": "Transpose",
+      "type": "Transpose",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "node_Reshape",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 337
+    },
+    {
+      "name": "/classifier/classifier.1/Gemm",
+      "type": "Gemm",
+      "compute_unit": "NPU",
+      "execution_time": 4,
+      "execution_cycles": 8916
+    },
+    {
+      "name": "Output",
+      "type": "Output",
+      "compute_unit": "NPU",
+      "execution_time": 1,
+      "execution_cycles": 3141
+    },
+    {
+      "name": "QcQuantizeOp_output_0_dq",
+      "type": "DequantizeLinear",
+      "compute_unit": "CPU",
+      "execution_time": 45,
+      "execution_cycles": 0
+    }
+  ]
+}

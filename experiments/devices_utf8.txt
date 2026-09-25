@@ -1,0 +1,84 @@
+﻿+---------------------------------+--------------+----------+---------+-----------------------------------------------------------+------------------------------------------------------------+
+|              Device             |      OS      |  Vendor  |   Type  |                          Chipset                          |                       CLI Invocation                       |
++---------------------------------+--------------+----------+---------+-----------------------------------------------------------+------------------------------------------------------------+
+|     Google Pixel 3 (Family)     |  Android 10  |  Google  |  Phone  |              qualcomm-snapdragon-845, sdm845              |     --device "Google Pixel 3 (Family)" --device-os 10      |
+|          Google Pixel 3         |  Android 10  |  Google  |  Phone  |              qualcomm-snapdragon-845, sdm845              |          --device "Google Pixel 3" --device-os 10          |
+|         Google Pixel 3a         |  Android 10  |  Google  |  Phone  |              qualcomm-snapdragon-670, sdm670              |         --device "Google Pixel 3a" --device-os 10          |
+|        Google Pixel 3 XL        |  Android 10  |  Google  |  Phone  |              qualcomm-snapdragon-845, sdm845              |        --device "Google Pixel 3 XL" --device-os 10         |
+|          Google Pixel 4         |  Android 10  |  Google  |  Phone  |              qualcomm-snapdragon-855, sm8150              |          --device "Google Pixel 4" --device-os 10          |
+|          Google Pixel 4         |  Android 11  |  Google  |  Phone  |              qualcomm-snapdragon-855, sm8150              |          --device "Google Pixel 4" --device-os 11          |
+|          Google Pixel 5         |  Android 11  |  Google  |  Phone  |              qualcomm-snapdragon-765g, sm7250             |          --device "Google Pixel 5" --device-os 11          |
+|      Samsung Galaxy Tab S7      |  Android 11  | Samsung  |  Tablet |            qualcomm-snapdragon-865+, sm8250-ab            |      --device "Samsung Galaxy Tab S7" --device-os 11       |
+|  Samsung Galaxy Note 20 (Intl)  |  Android 11  | Samsung  |  Phone  |                     samsung-exynos-990                    |  --device "Samsung Galaxy Note 20 (Intl)" --device-os 11   |
+|   Samsung Galaxy S21 (Family)   |  Android 11  | Samsung  |  Phone  |              qualcomm-snapdragon-888, sm8350              |   --device "Samsung Galaxy S21 (Family)" --device-os 11    |
+|        Samsung Galaxy S21       |  Android 11  | Samsung  |  Phone  |              qualcomm-snapdragon-888, sm8350              |        --device "Samsung Galaxy S21" --device-os 11        |
+|     Samsung Galaxy S21 Ultra    |  Android 11  | Samsung  |  Phone  |              qualcomm-snapdragon-888, sm8350              |     --device "Samsung Galaxy S21 Ultra" --device-os 11     |
+|     Xiaomi Redmi Note 10 5G     |  Android 11  | Oneplus  |  Phone  |             qualcomm-snapdragon-678, sm6150-ac            |     --device "Xiaomi Redmi Note 10 5G" --device-os 11      |
+|        Google Pixel 3a XL       |  Android 12  |  Google  |  Phone  |              qualcomm-snapdragon-670, sdm670              |        --device "Google Pixel 3a XL" --device-os 12        |
+|     Google Pixel 5 (Family)     |  Android 12  |  Google  |  Phone  |              qualcomm-snapdragon-765g, sm7250             |     --device "Google Pixel 5 (Family)" --device-os 12      |
+|          Google Pixel 5         |  Android 12  |  Google  |  Phone  |              qualcomm-snapdragon-765g, sm7250             |          --device "Google Pixel 5" --device-os 12          |
+|        Google Pixel 5a 5G       |  Android 12  |  Google  |  Phone  |              qualcomm-snapdragon-765g, sm7250             |        --device "Google Pixel 5a 5G" --device-os 12        |
+|          Google Pixel 6         |  Android 12  |  Google  |  Phone  |                       google-tensor                       |          --device "Google Pixel 6" --device-os 12          |
+|      Samsung Galaxy A53 5G      |  Android 12  | Samsung  |  Phone  |                    samsung-exynos-1280                    |      --device "Samsung Galaxy A53 5G" --device-os 12       |
+|      Samsung Galaxy A73 5G      |  Android 12  | Samsung  |  Phone  |              qualcomm-snapdragon-778g, sm7325             |      --device "Samsung Galaxy A73 5G" --device-os 12       |
+|         QCS8550 (Proxy)         |  Android 12  | Qualcomm |   Iot   | qualcomm-qcs8550-proxy, qualcomm-dragonwing-qcs8550-proxy |         --device "QCS8550 (Proxy)" --device-os 12          |
+|   Samsung Galaxy S21 (Family)   |  Android 12  | Samsung  |  Phone  |              qualcomm-snapdragon-888, sm8350              |   --device "Samsung Galaxy S21 (Family)" --device-os 12    |
+|        Samsung Galaxy S21       |  Android 12  | Samsung  |  Phone  |              qualcomm-snapdragon-888, sm8350              |        --device "Samsung Galaxy S21" --device-os 12        |
+|     Samsung Galaxy S21 Ultra    |  Android 12  | Samsung  |  Phone  |              qualcomm-snapdragon-888, sm8350              |     --device "Samsung Galaxy S21 Ultra" --device-os 12     |
+|   Samsung Galaxy S22 (Family)   |  Android 12  | Samsung  |  Phone  |             qualcomm-snapdragon-8gen1, sm8450             |   --device "Samsung Galaxy S22 (Family)" --device-os 12    |
+|   Samsung Galaxy S22 Ultra 5G   |  Android 12  | Samsung  |  Phone  |             qualcomm-snapdragon-8gen1, sm8450             |   --device "Samsung Galaxy S22 Ultra 5G" --device-os 12    |
+|      Samsung Galaxy S22 5G      |  Android 12  | Samsung  |  Phone  |             qualcomm-snapdragon-8gen1, sm8450             |      --device "Samsung Galaxy S22 5G" --device-os 12       |
+|      Samsung Galaxy S22+ 5G     |  Android 12  | Samsung  |  Phone  |             qualcomm-snapdragon-8gen1, sm8450             |      --device "Samsung Galaxy S22+ 5G" --device-os 12      |
+|      Samsung Galaxy Tab S8      |  Android 12  | Samsung  |  Tablet |             qualcomm-snapdragon-8gen1, sm8450             |      --device "Samsung Galaxy Tab S8" --device-os 12       |
+|        Xiaomi 12 (Family)       |  Android 12  |  Xiaomi  |  Phone  |             qualcomm-snapdragon-8gen1, sm8450             |        --device "Xiaomi 12 (Family)" --device-os 12        |
+|            Xiaomi 12            |  Android 12  |  Xiaomi  |  Phone  |             qualcomm-snapdragon-8gen1, sm8450             |            --device "Xiaomi 12" --device-os 12             |
+|     Google Pixel 6 (Family)     |  Android 13  |  Google  |  Phone  |                       google-tensor                       |     --device "Google Pixel 6 (Family)" --device-os 13      |
+|          Google Pixel 6         |  Android 13  |  Google  |  Phone  |                       google-tensor                       |          --device "Google Pixel 6" --device-os 13          |
+|     Google Pixel 7 (Family)     |  Android 13  |  Google  |  Phone  |                      google-tensor-g2                     |     --device "Google Pixel 7 (Family)" --device-os 13      |
+|          Google Pixel 7         |  Android 13  |  Google  |  Phone  |                      google-tensor-g2                     |          --device "Google Pixel 7" --device-os 13          |
+|        Google Pixel 7 Pro       |  Android 13  |  Google  |  Phone  |                      google-tensor-g2                     |        --device "Google Pixel 7 Pro" --device-os 13        |
+|      Samsung Galaxy A14 5G      |  Android 13  | Samsung  |  Phone  |                    samsung-exynos-1330                    |      --device "Samsung Galaxy A14 5G" --device-os 13       |
+|      Samsung Galaxy S22 5G      |  Android 13  | Samsung  |  Phone  |             qualcomm-snapdragon-8gen1, sm8450             |      --device "Samsung Galaxy S22 5G" --device-os 13       |
+|   Samsung Galaxy S23 (Family)   |  Android 13  | Samsung  |  Phone  |             qualcomm-snapdragon-8gen2, sm8550             |   --device "Samsung Galaxy S23 (Family)" --device-os 13    |
+|        Samsung Galaxy S23       |  Android 13  | Samsung  |  Phone  |             qualcomm-snapdragon-8gen2, sm8550             |        --device "Samsung Galaxy S23" --device-os 13        |
+|       Samsung Galaxy S23+       |  Android 13  | Samsung  |  Phone  |             qualcomm-snapdragon-8gen2, sm8550             |       --device "Samsung Galaxy S23+" --device-os 13        |
+|     Samsung Galaxy S23 Ultra    |  Android 13  | Samsung  |  Phone  |             qualcomm-snapdragon-8gen2, sm8550             |     --device "Samsung Galaxy S23 Ultra" --device-os 13     |
+|          Google Pixel 7         |  Android 14  |  Google  |  Phone  |                      google-tensor-g2                     |          --device "Google Pixel 7" --device-os 14          |
+|     Google Pixel 8 (Family)     |  Android 14  |  Google  |  Phone  |                      google-tensor-g3                     |     --device "Google Pixel 8 (Family)" --device-os 14      |
+|          Google Pixel 8         |  Android 14  |  Google  |  Phone  |                      google-tensor-g3                     |          --device "Google Pixel 8" --device-os 14          |
+|        Google Pixel 8 Pro       |  Android 14  |  Google  |  Phone  |                      google-tensor-g3                     |        --device "Google Pixel 8 Pro" --device-os 14        |
+|   Samsung Galaxy S24 (Family)   |  Android 14  | Samsung  |  Phone  |             qualcomm-snapdragon-8gen3, sm8650             |   --device "Samsung Galaxy S24 (Family)" --device-os 14    |
+|        Samsung Galaxy S24       |  Android 14  | Samsung  |  Phone  |             qualcomm-snapdragon-8gen3, sm8650             |        --device "Samsung Galaxy S24" --device-os 14        |
+|     Samsung Galaxy S24 Ultra    |  Android 14  | Samsung  |  Phone  |             qualcomm-snapdragon-8gen3, sm8650             |     --device "Samsung Galaxy S24 Ultra" --device-os 14     |
+|       Samsung Galaxy S24+       |  Android 14  | Samsung  |  Phone  |             qualcomm-snapdragon-8gen3, sm8650             |       --device "Samsung Galaxy S24+" --device-os 14        |
+|     Google Pixel 9 (Family)     |  Android 15  |  Google  |  Phone  |                      google-tensor-g4                     |     --device "Google Pixel 9 (Family)" --device-os 15      |
+|          Google Pixel 9         |  Android 15  |  Google  |  Phone  |                      google-tensor-g4                     |          --device "Google Pixel 9" --device-os 15          |
+|        Google Pixel 9 Pro       |  Android 15  |  Google  |  Phone  |                      google-tensor-g4                     |        --device "Google Pixel 9 Pro" --device-os 15        |
+|      Google Pixel 9 Pro XL      |  Android 15  |  Google  |  Phone  |                      google-tensor-g4                     |      --device "Google Pixel 9 Pro XL" --device-os 15       |
+|        Samsung Galaxy S25       |  Android 15  | Samsung  |  Phone  |     qualcomm-snapdragon-8-elite-for-galaxy, sm8750-ac     |        --device "Samsung Galaxy S25" --device-os 15        |
+|     Samsung Galaxy S25 Ultra    |  Android 15  | Samsung  |  Phone  |     qualcomm-snapdragon-8-elite-for-galaxy, sm8750-ac     |     --device "Samsung Galaxy S25 Ultra" --device-os 15     |
+|       Samsung Galaxy S25+       |  Android 15  | Samsung  |  Phone  |     qualcomm-snapdragon-8-elite-for-galaxy, sm8750-ac     |       --device "Samsung Galaxy S25+" --device-os 15        |
+|   Samsung Galaxy S25 (Family)   |  Android 15  | Samsung  |  Phone  |     qualcomm-snapdragon-8-elite-for-galaxy, sm8750-ac     |   --device "Samsung Galaxy S25 (Family)" --device-os 15    |
+|        Google Pixel 9 Pro       |  Android 16  |  Google  |  Phone  |                      google-tensor-g4                     |        --device "Google Pixel 9 Pro" --device-os 16        |
+|         Google Pixel 10         |  Android 16  |  Google  |  Phone  |                      google-tensor-g5                     |         --device "Google Pixel 10" --device-os 16          |
+|      Google Pixel 10 Pro XL     |  Android 16  |  Google  |  Phone  |                      google-tensor-g5                     |      --device "Google Pixel 10 Pro XL" --device-os 16      |
+|        Samsung Galaxy S26       |  Android 16  | Samsung  |  Phone  |   qualcomm-snapdragon-8-elite-gen5-for-galaxy, sm8850-ad  |        --device "Samsung Galaxy S26" --device-os 16        |
+|     Samsung Galaxy S26 Ultra    |  Android 16  | Samsung  |  Phone  |   qualcomm-snapdragon-8-elite-gen5-for-galaxy, sm8850-ad  |     --device "Samsung Galaxy S26 Ultra" --device-os 16     |
+|       Samsung Galaxy S26+       |  Android 16  | Samsung  |  Phone  |   qualcomm-snapdragon-8-elite-gen5-for-galaxy, sm8850-ad  |       --device "Samsung Galaxy S26+" --device-os 16        |
+|   Samsung Galaxy S26 (Family)   |  Android 16  | Samsung  |  Phone  |   qualcomm-snapdragon-8-elite-gen5-for-galaxy, sm8850-ad  |   --device "Samsung Galaxy S26 (Family)" --device-os 16    |
+|      Snapdragon X Elite CRD     |  Windows 11  | Qualcomm | Compute |           qualcomm-snapdragon-x-elite, sc8380xp           |      --device "Snapdragon X Elite CRD" --device-os 11      |
+|   Snapdragon X Plus 8-Core CRD  |  Windows 11  | Qualcomm | Compute |        qualcomm-snapdragon-x-plus-8-core, sc8340xp        |   --device "Snapdragon X Plus 8-Core CRD" --device-os 11   |
+|     Snapdragon X2 Elite CRD     |  Windows 11  | Qualcomm | Compute |           qualcomm-snapdragon-x2-elite, sc8480xp          |     --device "Snapdragon X2 Elite CRD" --device-os 11      |
+|      Snapdragon 8 Elite QRD     |  Android 15  | Qualcomm |  Phone  |            qualcomm-snapdragon-8-elite, sm8750            |      --device "Snapdragon 8 Elite QRD" --device-os 15      |
+|   Snapdragon 8 Elite Gen 5 QRD  |  Android 16  | Qualcomm |  Phone  |          qualcomm-snapdragon-8-elite-gen5, sm8850         |   --device "Snapdragon 8 Elite Gen 5 QRD" --device-os 16   |
+|      Snapdragon 7 Gen 4 QRD     |  Android 15  | Qualcomm |  Phone  |             qualcomm-snapdragon-7gen4, sm7750             |      --device "Snapdragon 7 Gen 4 QRD" --device-os 15      |
+|           SA8295P ADP           |  Android 14  | Qualcomm |   Auto  |                      qualcomm-sa8295p                     |           --device "SA8295P ADP" --device-os 14            |
+|           SA8775P ADP           |  Android 14  | Qualcomm |   Auto  |                      qualcomm-sa8775p                     |           --device "SA8775P ADP" --device-os 14            |
+|           SA7255P ADP           |  Android 14  | Qualcomm |   Auto  |                      qualcomm-sa7255p                     |           --device "SA7255P ADP" --device-os 14            |
+|      Dragonwing Q-6690 MTP      |  Android 15  | Qualcomm |   Iot   |   qualcomm-qcm6690, qcm6690, qualcomm-dragonwing-q-6690   |      --device "Dragonwing Q-6690 MTP" --device-os 15       |
+| Dragonwing RB3 Gen 2 Vision Kit | Qc_Linux 1.6 | Qualcomm |   Iot   |   qualcomm-qcs6490, qcs6490, qualcomm-dragonwing-qcs6490  | --device "Dragonwing RB3 Gen 2 Vision Kit" --device-os 1.6 |
+|      Dragonwing IQ-9075 EVK     | Qc_Linux 1.9 | Qualcomm |   Iot   |   qualcomm-qcs9075, qcs9075, qualcomm-dragonwing-iq-9075  |     --device "Dragonwing IQ-9075 EVK" --device-os 1.9      |
+|        Arduino VENTUNO Q        | Ubuntu 24.04 | Qualcomm |   Iot   |   qualcomm-qcs8275, qcs8275, qualcomm-dragonwing-iq-8275  |       --device "Arduino VENTUNO Q" --device-os 24.04       |
++---------------------------------+--------------+----------+---------+-----------------------------------------------------------+------------------------------------------------------------+
+
+Don't see your device or chipset listed? Reference Similar Devices for options to move forward: https://workbench.aihub.qualcomm.com/devices#similar-devices.
