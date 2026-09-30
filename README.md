@@ -45,8 +45,8 @@ All numbers below are extracted directly from real Qualcomm AI Hub execution pro
 
 ### Memory Metric Reconciliation: 32.8 MB vs Dashboard "2 MB"
 In the profile JSON, Qualcomm AI Hub reports two distinct memory metrics:
-- **`estimated_inference_peak_memory` (32,792,576 bytes ≈ 31.3 MB)**: Measures the overall process peak memory footprint, including graph allocations, model weights, and runtime context buffers.
-- **`inference_memory_peak_range` (1,708,032 bytes ≈ 1.63 MB)**: Measures the transient runtime working set per inference invocation. This is the exact metric rounded and displayed on the AI Hub web dashboard as **"Estimated Peak Memory Usage: 2 MB"**.
+- **`estimated_inference_peak_memory` (32,792,576 bytes → 31.3 MB)**: Measures the overall process peak memory footprint, including graph allocations, model weights, and runtime context buffers.
+- **`inference_memory_peak_range` (1,708,032 bytes → 1.63 MB)**: Measures the transient runtime working set per inference invocation. This is the exact metric rounded and displayed on the AI Hub web dashboard as **"Estimated Peak Memory Usage: 2 MB"**.
 
 Both metrics are real and non-contradictory: one measures total process footprint, the other measures inference working set delta.
 
@@ -87,8 +87,8 @@ The tool evaluates profiles using deterministic rules backed by empirical eviden
 ### Installation
 
 ```bash
-git clone https://github.com/<your-username>/npu-fit-checker.git
-cd npu-fit-checker
+git clone https://github.com/Tusharkapoor-oop/NPU-Fit-Checker-Automated-NPU-Fallback-Diagnosis.git
+cd NPU-Fit-Checker-Automated-NPU-Fallback-Diagnosis
 pip install -r requirements.txt
 ```
 
@@ -109,6 +109,20 @@ python -m fitchecker run --model mobilenet_v2.onnx --device "Snapdragon X2 Elite
 ```bash
 python -m fitchecker run --from-profile experiments/baseline_fp32/profile.json
 ```
+
+---
+
+## Tests
+
+The rules engine, profile parser, and device policy ship with a pytest suite:
+
+```bash
+python -m pytest tests/ -q
+# 30 passed
+```
+
+> Root-level `test_rules.py` / `test_demo_rules.py` are exploratory scripts (prints, no assertions).
+> The authoritative suite is `tests/`.
 
 ---
 
@@ -138,7 +152,7 @@ Every result is backed by verifiable artifacts and jobs on Qualcomm AI Hub:
 
 ## Honest Device Statement
 
-> **Hardware Environment**: All profiling jobs were executed on Qualcomm AI Hub's cloud-hosted Snapdragon compute devices (`Snapdragon X2 Elite CRD` / `Snapdragon X Elite CRD`). No physical HP hardware was accessed or used for these experiments.
+> **Hardware Environment**: All profiling jobs were executed on Qualcomm AI Hub's cloud-hosted Snapdragon compute devices (`Snapdragon X2 Elite CRD` / `Snapdragon X Elite CRD`). No physical local hardware was accessed or used for these experiments.
 
 ---
 
@@ -148,10 +162,11 @@ Every result is backed by verifiable artifacts and jobs on Qualcomm AI Hub:
 - **Cloud Device Only**: Operates via Qualcomm AI Hub cloud Workbench. Does not perform on-device profiling on local laptops.
 - **Pattern-Based Rules**: Diagnoses are produced via deterministic structural heuristics over AI Hub profiles, not machine learning classifiers.
 - **Boundary Classification**: QDQ boundary classification tested on MobileNetV2 architecture.
+- **Large files**: `*.onnx` reference models are committed for reproducibility; future versions will move them to Releases.
 - Full details in [docs/LIMITS.md](docs/LIMITS.md).
 
 ---
 
 ## License
 
-MIT
+No license file yet — MIT intended (to be added by the repository owner).
